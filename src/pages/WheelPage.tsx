@@ -1,4 +1,4 @@
-import { NetworkBackground } from '../components/NetworkBackground';
+import  NeuralBackground  from '../components/NeuralBackground';
 import { AIWheel } from '../components/AIWheel';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ const NotFound = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Background */}
-      <NetworkBackground />
+      <NeuralBackground />
       
       {/* Gradient Overlays */}
       <div

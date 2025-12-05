@@ -7,10 +7,11 @@
   import Discovery from "./pages/Introduction";
   import AgentWelcome from "./pages/AgentWelcome";
   import Explore from "./pages/Blank";
-  import NotFound from "./pages/WheelPage";
+  import WheelPage from "./pages/WheelPage";
   import GestureGame from "./pages/GestureGame";
   import QuizCv from "./pages/QuizCv"; 
   import ChatPage from "./pages/ChatPage";
+  import Blank from "./pages/Blank";
 
   const queryClient = new QueryClient();
 
@@ -24,13 +25,13 @@
             <Route path="/" element={<Index />} />
             <Route path="/introduction" element={<Discovery />} />
             <Route path="/agent" element={<AgentWelcome />} />
-            <Route path="/explore" element={<NotFound />} />
+            <Route path="/explore" element={<WheelPage />} />
             <Route path="/agent" element={<AgentWelcome />} />
             <Route path="/blank" element={<Explore />} />
             <Route path="/gesture-game" element={<GestureGame />} />
             <Route path="/quizes" element={<QuizCv />} />
             <Route path="/chat" element={<ChatPage />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<Blank />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>

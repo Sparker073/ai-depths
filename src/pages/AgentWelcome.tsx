@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { NetworkBackground } from '@/components/NetworkBackground';
+import  NeuralBackground  from '@/components/NeuralBackground';
 import DiveAnimation from '@/components/DiveAnimation';
 
 
@@ -23,7 +23,7 @@ const AgentWelcome = () => {
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center relative overflow-hidden">
-      <NetworkBackground />
+      <NeuralBackground />
       <DiveAnimation isActive={isDiving} clickPosition={clickPosition} />
 
 
